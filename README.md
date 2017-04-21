@@ -44,10 +44,12 @@ Sample element structure -
   "Place": "300 LaPorte Ave"
  }
 ```
-Notice: This repo is a part of a bigger project which also involves an python MQTT IoT client created. If you are interested in knowing more about the entire project archicture, visit this link:</br>
-page is under-construction
+Notice: This repo is a part of a bigger project which also involves an python MQTT IoT client created. 
 
-Need access to the app source code?
+Need access to the python MQTT client source code?
 https://github.com/virajpadte/AWSIoTPythonNode
+
+If you are interested in knowing more about the entire project archicture, visit this link:</br>
+page is under-construction
 
 
