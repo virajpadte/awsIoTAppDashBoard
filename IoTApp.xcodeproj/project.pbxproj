@@ -7,21 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159A13AF114EA5A83800B694 /* Pods_IoTApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0632BA00C4E79CD67944DD2 /* Pods_IoTApp.framework */; };
+		55325E801EA9A95900E95E1D /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55325E7F1EA9A95900E95E1D /* Locations.swift */; };
+		55325E841EA9DECB00E95E1D /* SingleNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55325E831EA9DECB00E95E1D /* SingleNodeViewController.swift */; };
+		55325EA41EA9EC4100E95E1D /* EnergyReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55325EA31EA9EC4100E95E1D /* EnergyReading.swift */; };
+		55325EA91EA9EEAA00E95E1D /* NaturalGasReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55325EA61EA9EEAA00E95E1D /* NaturalGasReading.swift */; };
+		55325EAA1EA9EEAA00E95E1D /* WasteWaterReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55325EA71EA9EEAA00E95E1D /* WasteWaterReading.swift */; };
+		55325EAB1EA9EEAA00E95E1D /* WaterReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55325EA81EA9EEAA00E95E1D /* WaterReading.swift */; };
+		5538855B1EAA8E6800C27E27 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553885581EAA8E6100C27E27 /* Charts.framework */; };
+		5538855C1EAA8E6800C27E27 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 553885581EAA8E6100C27E27 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558156B71EAA82B20003EC7D /* ActiveNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558156B51EAA82B20003EC7D /* ActiveNode.swift */; };
+		558156B81EAA82B20003EC7D /* InactiveNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558156B61EAA82B20003EC7D /* InactiveNode.swift */; };
 		55E7BC0C1EA97E7A00B43E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7BC0B1EA97E7A00B43E33 /* AppDelegate.swift */; };
-		55E7BC0E1EA97E7A00B43E33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7BC0D1EA97E7A00B43E33 /* ViewController.swift */; };
 		55E7BC111EA97E7A00B43E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55E7BC0F1EA97E7A00B43E33 /* Main.storyboard */; };
 		55E7BC131EA97E7A00B43E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E7BC121EA97E7A00B43E33 /* Assets.xcassets */; };
 		55E7BC161EA97E7A00B43E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55E7BC141EA97E7A00B43E33 /* LaunchScreen.storyboard */; };
+		55E7BC1E1EA9852F00B43E33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7BC1D1EA9852F00B43E33 /* LoginViewController.swift */; };
+		55E7BC201EA9854400B43E33 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7BC1F1EA9854400B43E33 /* MapViewController.swift */; };
+		55E7BC221EA98D0500B43E33 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7BC211EA98D0500B43E33 /* LocationsViewController.swift */; };
+		55E7BC241EA98D1600B43E33 /* NodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7BC231EA98D1600B43E33 /* NodesViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		553885571EAA8E6100C27E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553885521EAA8E6100C27E27 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		553885591EAA8E6100C27E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553885521EAA8E6100C27E27 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		5538855D1EAA8E6800C27E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553885521EAA8E6100C27E27 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		553885501EAA8DD200C27E27 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5538855C1EAA8E6800C27E27 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		223C0AEEB460EDCD34134BD4 /* Pods-IoTApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IoTApp/Pods-IoTApp.release.xcconfig"; sourceTree = "<group>"; };
+		454BD381E06C82FA57C4B61C /* Pods-IoTApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IoTApp/Pods-IoTApp.debug.xcconfig"; sourceTree = "<group>"; };
+		55325E7F1EA9A95900E95E1D /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		55325E831EA9DECB00E95E1D /* SingleNodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleNodeViewController.swift; sourceTree = "<group>"; };
+		55325EA31EA9EC4100E95E1D /* EnergyReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnergyReading.swift; sourceTree = "<group>"; };
+		55325EA61EA9EEAA00E95E1D /* NaturalGasReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaturalGasReading.swift; sourceTree = "<group>"; };
+		55325EA71EA9EEAA00E95E1D /* WasteWaterReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasteWaterReading.swift; sourceTree = "<group>"; };
+		55325EA81EA9EEAA00E95E1D /* WaterReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterReading.swift; sourceTree = "<group>"; };
+		553885521EAA8E6100C27E27 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		558156B51EAA82B20003EC7D /* ActiveNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveNode.swift; sourceTree = "<group>"; };
+		558156B61EAA82B20003EC7D /* InactiveNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InactiveNode.swift; sourceTree = "<group>"; };
 		55E7BC081EA97E7A00B43E33 /* IoTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E7BC0B1EA97E7A00B43E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55E7BC0D1EA97E7A00B43E33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55E7BC101EA97E7A00B43E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55E7BC121EA97E7A00B43E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55E7BC151EA97E7A00B43E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55E7BC171EA97E7A00B43E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E7BC1D1EA9852F00B43E33 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		55E7BC1F1EA9854400B43E33 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		55E7BC211EA98D0500B43E33 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		55E7BC231EA98D1600B43E33 /* NodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodesViewController.swift; sourceTree = "<group>"; };
+		B0632BA00C4E79CD67944DD2 /* Pods_IoTApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IoTApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +96,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159A13AF114EA5A83800B694 /* Pods_IoTApp.framework in Frameworks */,
+				5538855B1EAA8E6800C27E27 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188DBA88646022447AFC32FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0632BA00C4E79CD67944DD2 /* Pods_IoTApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		553885531EAA8E6100C27E27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				553885581EAA8E6100C27E27 /* Charts.framework */,
+				5538855A1EAA8E6100C27E27 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		55E7BBFF1EA97E7A00B43E33 = {
 			isa = PBXGroup;
 			children = (
+				553885521EAA8E6100C27E27 /* Charts.xcodeproj */,
 				55E7BC0A1EA97E7A00B43E33 /* IoTApp */,
 				55E7BC091EA97E7A00B43E33 /* Products */,
+				612D884F590CA65F6290E31F /* Pods */,
+				188DBA88646022447AFC32FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +143,34 @@
 		55E7BC0A1EA97E7A00B43E33 /* IoTApp */ = {
 			isa = PBXGroup;
 			children = (
+				558156B51EAA82B20003EC7D /* ActiveNode.swift */,
+				558156B61EAA82B20003EC7D /* InactiveNode.swift */,
+				55325EA61EA9EEAA00E95E1D /* NaturalGasReading.swift */,
+				55325EA71EA9EEAA00E95E1D /* WasteWaterReading.swift */,
+				55325EA81EA9EEAA00E95E1D /* WaterReading.swift */,
+				55325EA31EA9EC4100E95E1D /* EnergyReading.swift */,
 				55E7BC0B1EA97E7A00B43E33 /* AppDelegate.swift */,
-				55E7BC0D1EA97E7A00B43E33 /* ViewController.swift */,
 				55E7BC0F1EA97E7A00B43E33 /* Main.storyboard */,
 				55E7BC121EA97E7A00B43E33 /* Assets.xcassets */,
 				55E7BC141EA97E7A00B43E33 /* LaunchScreen.storyboard */,
 				55E7BC171EA97E7A00B43E33 /* Info.plist */,
+				55E7BC1D1EA9852F00B43E33 /* LoginViewController.swift */,
+				55E7BC1F1EA9854400B43E33 /* MapViewController.swift */,
+				55E7BC211EA98D0500B43E33 /* LocationsViewController.swift */,
+				55E7BC231EA98D1600B43E33 /* NodesViewController.swift */,
+				55325E7F1EA9A95900E95E1D /* Locations.swift */,
+				55325E831EA9DECB00E95E1D /* SingleNodeViewController.swift */,
 			);
 			path = IoTApp;
+			sourceTree = "<group>";
+		};
+		612D884F590CA65F6290E31F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				454BD381E06C82FA57C4B61C /* Pods-IoTApp.debug.xcconfig */,
+				223C0AEEB460EDCD34134BD4 /* Pods-IoTApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,13 +180,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55E7BC1A1EA97E7A00B43E33 /* Build configuration list for PBXNativeTarget "IoTApp" */;
 			buildPhases = (
+				4C77170804C0DE392714832F /* [CP] Check Pods Manifest.lock */,
 				55E7BC041EA97E7A00B43E33 /* Sources */,
 				55E7BC051EA97E7A00B43E33 /* Frameworks */,
 				55E7BC061EA97E7A00B43E33 /* Resources */,
+				87FDF7A457921DC3BF9A7AF5 /* [CP] Embed Pods Frameworks */,
+				B69C7CD295A94758A63D79FF /* [CP] Copy Pods Resources */,
+				553885501EAA8DD200C27E27 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5538855E1EAA8E6800C27E27 /* PBXTargetDependency */,
 			);
 			name = IoTApp;
 			productName = IoTApp;
@@ -96,6 +210,7 @@
 				TargetAttributes = {
 					55E7BC071EA97E7A00B43E33 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = DWRHKVVARM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -111,12 +226,35 @@
 			mainGroup = 55E7BBFF1EA97E7A00B43E33;
 			productRefGroup = 55E7BC091EA97E7A00B43E33 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 553885531EAA8E6100C27E27 /* Products */;
+					ProjectRef = 553885521EAA8E6100C27E27 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				55E7BC071EA97E7A00B43E33 /* IoTApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		553885581EAA8E6100C27E27 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 553885571EAA8E6100C27E27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5538855A1EAA8E6100C27E27 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 553885591EAA8E6100C27E27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		55E7BC061EA97E7A00B43E33 /* Resources */ = {
@@ -131,17 +269,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C77170804C0DE392714832F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87FDF7A457921DC3BF9A7AF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IoTApp/Pods-IoTApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B69C7CD295A94758A63D79FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IoTApp/Pods-IoTApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		55E7BC041EA97E7A00B43E33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55E7BC0E1EA97E7A00B43E33 /* ViewController.swift in Sources */,
+				55325E801EA9A95900E95E1D /* Locations.swift in Sources */,
+				55E7BC241EA98D1600B43E33 /* NodesViewController.swift in Sources */,
+				55325EA41EA9EC4100E95E1D /* EnergyReading.swift in Sources */,
+				55E7BC1E1EA9852F00B43E33 /* LoginViewController.swift in Sources */,
+				55E7BC201EA9854400B43E33 /* MapViewController.swift in Sources */,
+				558156B71EAA82B20003EC7D /* ActiveNode.swift in Sources */,
+				55325EAA1EA9EEAA00E95E1D /* WasteWaterReading.swift in Sources */,
+				55325E841EA9DECB00E95E1D /* SingleNodeViewController.swift in Sources */,
+				55325EAB1EA9EEAA00E95E1D /* WaterReading.swift in Sources */,
 				55E7BC0C1EA97E7A00B43E33 /* AppDelegate.swift in Sources */,
+				55325EA91EA9EEAA00E95E1D /* NaturalGasReading.swift in Sources */,
+				55E7BC221EA98D0500B43E33 /* LocationsViewController.swift in Sources */,
+				558156B81EAA82B20003EC7D /* InactiveNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5538855E1EAA8E6800C27E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 5538855D1EAA8E6800C27E27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55E7BC0F1EA97E7A00B43E33 /* Main.storyboard */ = {
@@ -258,8 +463,11 @@
 		};
 		55E7BC1B1EA97E7A00B43E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454BD381E06C82FA57C4B61C /* Pods-IoTApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DWRHKVVARM;
 				INFOPLIST_FILE = IoTApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.virajpadte.IoTApp;
@@ -270,8 +478,11 @@
 		};
 		55E7BC1C1EA97E7A00B43E33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223C0AEEB460EDCD34134BD4 /* Pods-IoTApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DWRHKVVARM;
 				INFOPLIST_FILE = IoTApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.virajpadte.IoTApp;
@@ -299,6 +510,7 @@
 				55E7BC1C1EA97E7A00B43E33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

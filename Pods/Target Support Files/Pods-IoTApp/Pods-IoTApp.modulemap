@@ -1,0 +1,6 @@
+framework module Pods_IoTApp {
+  umbrella header "Pods-IoTApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
