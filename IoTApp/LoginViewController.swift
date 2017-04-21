@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //authenticateUser()
+        authenticateUser()
 
         // Do any additional setup after loading the view.
         
@@ -88,7 +88,7 @@ class LoginViewController: UIViewController {
     @IBAction func attemptedLogin(_ sender: Any) {
         print("attempted login")
         if (userTextInput.text == "virajrp" && passwordTextInput.text == "virajrp"){
-            performSegue(withIdentifier: "toRegions", sender: nil)
+            performSegue(withIdentifier: "toLocations", sender: nil)
         }
         else{
             print("sorry cant login.. invalid credentials")
