@@ -92,8 +92,19 @@ class LoginViewController: UIViewController {
         }
         else{
             print("sorry cant login.. invalid credentials")
+            //show an alert
+            let alert = UIAlertController(title: "Opps", message: "Invalid UserID/Password", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (cancelled) in
+                print("colapse alert")
+            }))
+            self.present(alert, animated: true)
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        userTextInput.text?.removeAll()
+        passwordTextInput.text?.removeAll()
     }
     
     

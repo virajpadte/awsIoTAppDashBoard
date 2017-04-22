@@ -126,5 +126,15 @@ class LocationsViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func logoutRequested(_ sender: Any) {
+        //show an alert
+        let alert = UIAlertController(title: "Log Out", message: "Are you sure you want to log out?", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (cancelled) in
+            print("logout cancelled")
+        }))
+        alert.addAction(UIAlertAction(title: "Log Out", style: .default, handler: { (loggedOut) in
+            self.performSegue(withIdentifier: "toLogin", sender: nil)
+        }))
+        self.present(alert, animated: true)
+    }
 }

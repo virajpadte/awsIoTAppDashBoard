@@ -34,7 +34,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="attemptedLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEE-ig-QEy"/>
-                                    <segue destination="h8Q-NA-dVJ" kind="show" identifier="toLocations" id="0ZP-ic-tjx"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your email or UserID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SW7-rt-rRp" userLabel="userIDTextInput">
@@ -58,11 +57,12 @@
                     <connections>
                         <outlet property="passwordTextInput" destination="a8o-hE-q8U" id="sdi-g8-itM"/>
                         <outlet property="userTextInput" destination="SW7-rt-rRp" id="dF5-vu-D5N"/>
+                        <segue destination="h8Q-NA-dVJ" kind="show" identifier="toLocations" id="vRG-Hx-6S0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724" y="887"/>
+            <point key="canvasLocation" x="-270" y="887"/>
         </scene>
         <!--LocationsViewControllerScene-->
         <scene sceneID="CF9-6t-Ca7">
@@ -88,6 +88,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Locations" id="ti0-Sp-AMI">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="d9d-0T-koG">
+                            <connections>
+                                <action selector="logoutRequested:" destination="h8Q-NA-dVJ" id="vXN-eP-smb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Map" id="AXh-fK-SHy">
                             <connections>
                                 <segue destination="9jg-ll-W3b" kind="show" id="JJO-Am-CdK"/>
@@ -97,11 +102,12 @@
                     <connections>
                         <outlet property="table" destination="NNS-r0-avP" id="Jsc-lb-DKv"/>
                         <segue destination="J4k-ap-WKb" kind="show" identifier="toNodeList" id="aOe-Ku-uEF"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toLogin" id="TKs-SR-2cL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYv-tK-HRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1515" y="887"/>
+            <point key="canvasLocation" x="954" y="887"/>
         </scene>
         <!--Nodes-->
         <scene sceneID="kmM-fZ-f1d">
@@ -133,7 +139,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGv-z3-XMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1515" y="1739"/>
+            <point key="canvasLocation" x="953" y="1684"/>
         </scene>
         <!--SingleNodeVIew-->
         <scene sceneID="RWp-9y-x6o">
@@ -189,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9p-2h-FbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2139" y="1739"/>
+            <point key="canvasLocation" x="2326" y="1684"/>
         </scene>
         <!--Map-->
         <scene sceneID="lxP-A7-u8C">
@@ -216,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sym-9u-NbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2829.5999999999999" y="886.50674662668678"/>
+            <point key="canvasLocation" x="2327" y="887"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZcX-77-HuA">
@@ -232,7 +238,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYo-iY-tq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="887"/>
+            <point key="canvasLocation" x="-1118" y="887"/>
         </scene>
     </scenes>
     <resources>
@@ -240,4 +246,7 @@
         <image name="loginGroup" width="318" height="428"/>
         <image name="nodeInfo" width="336" height="111"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="TKs-SR-2cL"/>
+    </inferredMetricsTieBreakers>
 </document>
