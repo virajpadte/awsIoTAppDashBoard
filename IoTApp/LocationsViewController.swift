@@ -19,7 +19,11 @@ class LocationsViewController: UITableViewController {
     var selectedLocation = ""
     var nodeLocations = [CLLocationCoordinate2D]()
     
+    //UI elements
     @IBOutlet var table: UITableView!
+    var activityIndicator = UIActivityIndicatorView()
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,13 @@ class LocationsViewController: UITableViewController {
     }
 
     func scanData(){
+        //setup a activity indicator and keep animating till the data is fetched
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        view.addSubview(activityIndicator)
+        
+        activityIndicator.startAnimating()
         let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
         
         let scanExpression = AWSDynamoDBScanExpression()
@@ -56,6 +67,7 @@ class LocationsViewController: UITableViewController {
                     self.nodeLocations.append(CLLocationCoordinate2D(latitude: CLLocationDegrees(Float(splitStringCoordinatesPairs[0])!), longitude: CLLocationDegrees(Float(splitStringCoordinatesPairs[1])!)))
                 }
                 print(self.nodeLocations)
+                self.activityIndicator.stopAnimating()
                 self.table.reloadData()
             }
             else{
