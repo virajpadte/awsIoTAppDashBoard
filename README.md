@@ -49,6 +49,10 @@ Notice: This repo is a part of a bigger project which also involves an python MQ
 Need access to the python MQTT client source code?
 https://github.com/virajpadte/AWSIoTPythonNode
 
+Need the assets used for designing this app's UI:
+Good news! I have used sketch for designing the UI and here a repo link for the sketch project:
+https://github.com/virajpadte/AWSIoTDashboard-App-mockup
+
 If you are interested in knowing more about the entire project archicture, visit this link:</br>
 page is under-construction
 
