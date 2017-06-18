@@ -1,9 +1,7 @@
 
+<h1 align="center">awsIoTAppDashBoard</h1>
+<img src="https://user-images.githubusercontent.com/3850481/27263943-15bfe5f8-5432-11e7-9dd3-2e0d0d6b596b.png">
 
-<p align="center">
-  <h1>awsIoTAppDashBoard</h1>
-  <img src="https://user-images.githubusercontent.com/3850481/27263943-15bfe5f8-5432-11e7-9dd3-2e0d0d6b596b.png">
-</p>
 
 Before you run add your own identity pool ID in AppDelegate let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,identityPoolId:"use your identityPoolID")
 
